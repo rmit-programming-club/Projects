@@ -34,6 +34,16 @@
 
 ----
 
+##### [Interview With Python - Coding exercises for interviews and generally better coding](https://github.com/thundergolfer/interview-with-python)
+- **Languages:** Python
+- **Difficulty:** Easy
+- **Areas of Interest:** Python, Problem Solving, Algorithms, Data Structures
+- **Author:** [Jonathon Belotti](https://github.com/thundergolfer/)
+- **Description:** A project aimed at interview prep, and generally improving your code.
+- **Project Status:** Going along nicely, testing and documentation and explanation could all be contributed. Also could always use more exercises.
+
+----
+
 ## Other Projects
 
 ##### Working on Jan and Junior, John Thangarajuh's Nao Robots
