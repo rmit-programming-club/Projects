@@ -11,7 +11,12 @@
 
 ## Club Projects
 
-... Coming Soon
+.##### [A Calculator in C++](/calculator_c++)
+- **Languages:** C++, C
+- **Difficulty:** Low
+- **Author:** [Jonathon Belotti](https://github.com/thundergolfer/), and hopefully soon others!
+- **Description:** This is an intro programming project for people wanting to get more familiar with C++. A basic calculator is easy for a beginner to implement with practice, but more and more features can always be added to the project to make the calculator more capable.
+- **Project Status:** You can always add features to this.
 
 ## Student Projects
 
