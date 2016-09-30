@@ -1,9 +1,10 @@
 // Object Oriented Calculator Program
 // Started: 29/09/16
 
-#include <iostream>
+#include <iostream>   // standard input/output
 #include <cmath>
-#include "infix.cpp" // contains the Token struct and the apply_op() function
+#include <map>        // for dictionary functionality
+#include "infix.cpp"  // contains the Token struct and the apply_op() function
 
 using namespace std;
 
@@ -16,7 +17,10 @@ public:
     void get_statement();
     long evaluate( string expr, bool &error );
 private:
+    /*    MEMORY     */
     double prev_result;
+    map<string,double> variables;
+    /******************/
 };
 
 // TODO: calculator currently only returns integer values
@@ -54,6 +58,10 @@ long Calculator::evaluate( string expr, bool &error ) {
                 if( !error ) {
                   s.pop();
                 }
+                break;
+            case Token::KEYWORD: // TODO
+                break;
+            case Token::VAR: // TODO
                 break;
             default: // arithmetic operators
                 // we have hit an operator so check if we have a left-hand

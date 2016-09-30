@@ -1,6 +1,7 @@
 // Infix Expressions Evaluation
 //
 #include <string>
+#include <cstring>
 #include <stack>
 #include <cctype>
 #include <cstdlib>
@@ -10,7 +11,13 @@ using namespace std;      // now don't have to write std::int or std::stack
 // What is a token? Modify if needed (e.g. to support variables, extra operators, etc)
 struct Token {
 
-    enum Type {NUMBER, PLUS, MINUS, TIMES, DIVIDE, LEFT_PAREN, RIGHT_PAREN};
+    enum Type {
+               NUMBER,
+               PLUS, MINUS,
+               TIMES, DIVIDE,
+               LEFT_PAREN, RIGHT_PAREN,
+               VAR, KEYWORD
+              };
 
     // priority of the operators: bigger number means higher priority
     // e.g */ has priority 2, +- has priority 1, ( has priority 0
@@ -22,6 +29,7 @@ struct Token {
 
     Type type;
     long val;
+    string name; // when token is a variable word or keyword
 
     Token() {
         priority[1] = priority[2] = 1;
@@ -45,38 +53,53 @@ struct Token {
         }
         if( start >= len ) { return false; }
 
-        switch( expr[start]) {
-            case '(':
-                type = LEFT_PAREN;
-                break;
-            case ')':
-                type = RIGHT_PAREN;
-                break;
-            case '*':
-                type = TIMES;
-                break;
-            case '/':
-                type = DIVIDE;
-                break;
-            case '+':
-                type = PLUS;
-                break;
-            case '-':
-                type = MINUS;
-                break;
-            default:
-                // check for number
-                const char *s = expr.c_str() + start;
-                char *p;
-                val = strtol(s , &p, 10); // string to long, base 10
-                if( s == p ) {
-                    error = true;
-                    return false;
-                }
-                type = NUMBER;
-                start += (p - s);
+        // First check if we have an alnum variable or keyword
+        // these are handled differently
+        if(isalnum(expr[start])) {
+            const char *s = expr.c_str() + start;
+            const char * found = strchr(s, ' ');
+            if( found != NULL ) { // get substring
+                name = expr.substr(start, found - s );
+                start += (found - s);
+            } else { // word takes up rest of line
+                name = s; // TODO possible copy issue?
+                start += expr.length() - start;
+            }
+        } else {
+
+            switch( expr[start]) {
+                case '(':
+                    type = LEFT_PAREN;
+                    break;
+                case ')':
+                    type = RIGHT_PAREN;
+                    break;
+                case '*':
+                    type = TIMES;
+                    break;
+                case '/':
+                    type = DIVIDE;
+                    break;
+                case '+':
+                    type = PLUS;
+                    break;
+                case '-':
+                    type = MINUS;
+                    break;
+                default:
+                    // check for number OR variable
+                    const char *s = expr.c_str() + start;
+                    char *p;
+                    val = strtol(s , &p, 10); // string to long, base 10
+                    if( s == p ) {
+                        error = true;
+                        return false;
+                    }
+                    type = NUMBER;
+                    start += (p - s); // move forward by length of number
+            }
+            if( type != NUMBER ) { start++; } // move forward only 1 place
         }
-        if( type != NUMBER ) { start++; }
         return true;
     }
 };
