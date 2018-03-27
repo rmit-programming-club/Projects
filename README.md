@@ -64,6 +64,15 @@
 
 ----
 
+#### Dot collector for lectures
+- **Languages:** Javascript and Python
+- **Difficulty:** Medium
+- **Areas of Interest:** AWS, serverless computing, React for mobile
+- **Author:** [Sam Nolan](https://github.com/Hazelfire/)
+- **Description:** An app for giving lecturers micro feedback on the pace/quality of their content delivery.
+- **Project Status:** Yet to start, contact me at s3723315@student.rmit.edu.au for details.
+
+----
 ## Other Projects
 
 ##### Working on Jan and Junior, John Thangarajuh's Nao Robots
