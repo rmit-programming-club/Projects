@@ -1,6 +1,7 @@
 <p align="center">
   <img src="images/club_logo_small.png"/>
 </p>
+
 # Projects
 
 # Contents
@@ -11,7 +12,7 @@
 
 ## Club Projects
 
-.##### [A Calculator in C++](/calculator_c++)
+##### [A Calculator in C++](/calculator_c++)
 - **Languages:** C++, C
 - **Difficulty:** Low
 - **Author:** [Jonathon Belotti](https://github.com/thundergolfer/), and hopefully soon others!
