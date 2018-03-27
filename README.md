@@ -26,6 +26,13 @@
 - **Description:** Visualise the collaboration network of our Github organisation, or any other! Who's coding with who, and how often?
 - **Project Status:** MVP Complete. Graph visualisation needs more detail, and needs deploying to cloud somewhere
 
+##### [Our website](https://github.com/rmit-programming-club/rmit-programming-club.github.io)
+- **Languages:** Just HTML, CSS, and a bit of JS maybe
+- **Difficulty:** Easy
+- **Authors:** Patrick Mifsud (current maintainer), Jonathon Belotti
+- **Description:** Self-explannatory really, go to https://rmitprogramming.club
+- **Project Status:** Ongoing tweaks, ask Patrick Mifsud if you can help out
+
 ## Student Projects
 
 ##### [Implementing algorithm's from Sudkamps Languages & Machines 4th Ed. in Java](https://github.com/thundergolfer/sudkamp-langs-machines-java) & [also in Python](https://github.com/thundergolfer/sudkamp-langs-machines-python)
