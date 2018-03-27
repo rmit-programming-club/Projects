@@ -19,6 +19,13 @@
 - **Description:** This is an intro programming project for people wanting to get more familiar with C++. A basic calculator is easy for a beginner to implement with practice, but more and more features can always be added to the project to make the calculator more capable.
 - **Project Status:** You can always add features to this.
 
+##### [network-vis](https://github.com/rmit-programming-club/network-vis)
+- **Languages:** Ruby, Javascript
+- **Difficulty:** Medium
+- **Authors:** [Jono, Ervin, Louis, and Rad](https://github.com/rmit-programming-club/network-vis/graphs/contributors)
+- **Description:** Visualise the collaboration network of our Github organisation, or any other! Who's coding with who, and how often?
+- **Project Status:** MVP Complete. Graph visualisation needs more detail, and needs deploying to cloud somewhere
+
 ## Student Projects
 
 ##### [Implementing algorithm's from Sudkamps Languages & Machines 4th Ed. in Java](https://github.com/thundergolfer/sudkamp-langs-machines-java) & [also in Python](https://github.com/thundergolfer/sudkamp-langs-machines-python)
