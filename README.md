@@ -64,7 +64,7 @@
 
 ----
 
-#### Dot collector for lectures
+#### [Dot collector](https://github.com/Hazelfire/DotCollector)
 - **Languages:** Javascript and Python
 - **Difficulty:** Medium
 - **Areas of Interest:** AWS, serverless computing, React for mobile
