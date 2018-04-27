@@ -64,14 +64,15 @@
 
 ----
 
-#### Dot collector for lectures
+#### [Dot collector](https://github.com/Hazelfire/DotCollector)
 - **Languages:** Javascript and Python
 - **Difficulty:** Medium
-- **Areas of Interest:** AWS, serverless computing, React for mobile
+- **Areas of Interest:** AWS, serverless computing, React
 - **Author:** [Sam Nolan](https://github.com/Hazelfire/)
 - **Description:** An app for giving lecturers micro feedback on the pace/quality of their content delivery.
-- **Project Status:** Yet to start, contact me at s3723315@student.rmit.edu.au for details.
----
+- **Project Status:** In development, check out the repo for details.
+
+----
 
 ### [Explain it like I'm 2](https://github.com/Hazelfire/EILI2)
 - **Languages:** LaTeX
