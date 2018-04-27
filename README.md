@@ -73,6 +73,16 @@
 - **Project Status:** In development, check out the repo for details.
 
 ----
+
+### [Explain it like I'm 2](https://github.com/Hazelfire/EILI2)
+- **Languages:** LaTeX
+- **Difficulty:** Easy
+- **Areas of Interest:** Teaching, Computer Science
+- **Author:** Sam Nolan
+- **Description:** A collection of papers on computer science giving in depth explanations on topics
+- **Project Status:** In development, check out the Github Repo
+
+----
 ## Other Projects
 
 ##### Working on Jan and Junior, John Thangarajuh's Nao Robots
